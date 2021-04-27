@@ -1,0 +1,130 @@
+<!-- MAPS ON -->
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta nombre="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta nombre="theme-color" content="#fafafa" />
+
+  <title>Maps on</title>
+
+  <meta nombre="description" content="" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 id="mapon"> Maps on </h1>
+  <div id="inicio">
+    <div id="llamar">
+
+
+      <!-- NOMBRE DE USUARIO -->
+      <input type="text" id="nombre" placeholder="ESCRIBE TU NOMBRE" />
+      <button type="submit" id="guardarNombre">Siguiente</button>
+    </div>
+
+    <!-- BOTONES PANTALLA INICIAL-->
+    <div class="botones" id="botones">
+      <p id="saludo"></p>
+      <div class="botonesmapas">
+        <button  type="button" id="pregComunidades" class="botonmapacom"> Mapa Comunidades </button>
+        <button  type="button" id="pregProvincias" class="botonmapaprov"> Mapa Provincias</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PREGUNTAS COMUNIDADES -->
+  <article id="comunidades">
+
+    <section class="comunidadespreguntas" id="madrid">
+      <div class="mapacomunidades">
+        <img class="tamañomapa" src="img/comunidades/madrid.png">
+      </div>
+      <label><b>1. ¿Qué comunidad autónoma es?</b></label><br> <br>
+      <input type="radio" nombre="p1" value="100"> Madrid <br>
+      <input type="radio" nombre="p1" value="0"> Andalucía <br>
+      <input type="radio" nombre="p1" value="0"> Galicia <br>
+      <br>
+      <button type="button" id="siguientePregunta1" class="btn-outline-warning">Siguiente </button>
+    </section>
+    <section class="comunidadespreguntas" id="extremadura">
+      <div class="mapacomunidades">
+        <img class="tamañomapa" src="img/comunidades/extremadura.png">
+      </div>
+      <label><b>2.¿Qué comunidad autónoma es?</b></label> <br><br>
+      <input type="radio" nombre="p2" value="0"> Asturias<br>
+      <input type="radio" nombre="p2" value="100"> Extremadura <br>
+      <input type="radio" nombre="p2" value="0"> Comunidad Valenciana <br>
+      <br>
+      <button type="button" id="siguientePregunta2" class="btn-outline-warning">Siguiente </button>
+    </section>
+    
+    <section class="comunidadespreguntas" id="cataluña">
+      <div class="mapacomunidades">
+        <img class="tamañomapa" src="img/comunidades/cataluña.png">
+      </div>
+      <label><b>3. ¿Qué comunidad autónoma es?</b></label> <br> <br>
+      <input type="radio" nombre="p3" value="0"> Aragón <br>
+      <input type="radio" nombre="p3" value="0"> Cantabria <br>
+      <input type="radio" nombre="p3" value="100"> Cataluña <br>
+      <br>
+      <button type="button" value="enviar1" id="resultado1" class="btn-outline-warning"> Ver resultado </button>
+    </section>
+  </article>
+
+
+  <!-- BOTONES PROVINCIAS -->
+
+  <article id="provincias">
+    <section class="provinciaspreguntas" id="pontevedra">
+      <div class="mapaprovincias">
+        <img class="tamañomapa2" src="img/provincias/pontevedra.png">
+      </div>
+      <label><b>1.¿Qué provincia es?</b></label> <br> <br>
+      <input type="radio" nombre="p3" value="0"> Lugo<br>
+      <input type="radio" nombre="p3" value="0"> A Coruña <br>
+      <input type="radio" nombre="p3" value="100"> Pontevedra <br>
+      <br>
+      <button type="button" id="siguientePregunta3" class="btn-outline-info">Siguiente </button>
+    </section>
+    <section class="provinciaspreguntas" id="cadiz">
+      <div class="mapaprovincias">
+        <img class="tamañomapa2" src="img/provincias/cadiz.png">
+      </div>
+      <label><b>2.¿Qué provincia es?</b></label> <br> <br>
+      <input type="radio" nombre="p4" value="0"> Sevilla <br>
+      <input type="radio" nombre="p4" value="100"> Cádiz <br>
+      <input type="radio" nombre="p4" value="0"> Málaga <br>
+      <br>
+      <button type="button" id="siguientePregunta4" class="btn-outline-info">Siguiente </button>
+    </section>
+    <section class="provinciaspreguntas" id="toledo">
+      <div class="mapaprovincias">
+        <img class="tamañomapa2" src="img/provincias/toledo.png">
+      </div>
+      <label><b>3.¿Qué provincia es?</b></label> <br><br>
+      <input type="radio" nombre="p5" value="0">Cuenca<br>
+      <input type="radio" nombre="p5" value="0"> Segovia <br>
+      <input type="radio" nombre="p5" value="100"> Toledo <br>
+      <br>
+      <button type="button" value="enviar2" id="resultado2" class="btn-outline-info">Ver resultado</button>
+    </section>
+  </article>
+
+  <!-- RESULTADO FINAL -->
+
+  <article>
+    
+    <section id="resultado_final">
+      <h2> Resultado </h2>
+      <p id="rpta"></p>
+      
+    </section>
+  </article>
+
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
